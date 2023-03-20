@@ -1,0 +1,54 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.log-col-1 {
+  color: #E9266C;
+  min-width: 220px !important;
+  max-width: 220px !important;
+}
+
+.log-col-2 {
+  min-width: 100% !important;
+  max-width: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+  width: 100%;
+}
+
+.log-row {
+  border-bottom: none;
+  min-height: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+}
