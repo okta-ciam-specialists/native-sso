@@ -1,0 +1,28 @@
+{
+  "projectName": "native-sso",
+  "projectOwner": "eatplaysleep",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributorsSortAlphabetically": true,
+  "badgeTemplate": "<a href=\"#contributors\"><img src=\"https://img.shields.io/github/all-contributors/<%= projectOwner %>/<%= projectName %>?color=ee8449&style=flat-square\"></a>",
+  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" style=\"border-radius:50%\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
+  "contributors": [
+    {
+      "login": "krishvenkatraman-okta-zz",
+      "name": "Krish Venkatraman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14205843?v=4",
+      "profile": "https://github.com/krishvenkatraman-okta-zz",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}
