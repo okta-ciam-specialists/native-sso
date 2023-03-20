@@ -33,6 +33,10 @@
     "react-json-pretty": "^2.2.0",
     "react-router-dom": "^5.3.4",
     "ulid": "^2.3.0",
+    "vercel": "^28.17.0",
     "vite": "^4.2.0"
+  },
+  "stackblitz": {
+    "startCommand": "vercel dev"
   }
 }
