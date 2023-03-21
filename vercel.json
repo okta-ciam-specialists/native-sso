@@ -1,4 +1,5 @@
 {
+	"cleanUrls": true,
 	"rewrites": [
 		{
 			"source": "/api/(.*)",
@@ -9,8 +10,12 @@
 			"destination": "/api"
 		},
 		{
+			"source": "/sso",
+			"destination": "/api"
+		},
+		{
 			"source": "/(.*)",
-			"destination": "/"
+			"destination": ""
 		}
 	]
 }

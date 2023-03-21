@@ -9,15 +9,13 @@ import {
 	useTheme
 } from '@mui/material';
 
-import { useAuthProvider, useLogout } from '../hooks';
+import { useAuthProvider } from '../hooks';
 
 const { VITE_APP_URL: APP_URL } = import.meta.env;
 
 export const Toolbar = () => {
-	const { isAuthenticated, loading, oktaAuth } = useAuthProvider()
+	const { isAuthenticated, loading, logout, oktaAuth } = useAuthProvider()
 	const theme = useTheme();
-
-	const { logout } = useLogout();
 
 	return <AppBar>
 		<MuiToolbar>

@@ -6,7 +6,7 @@ export const LogProviderContext = createContext(null)
 export const LogProvider = ({ children }) => {
 	const [log, setLog] = useState([]);
 
-	const logger = (data) => {
+	const logger = (data, time = false) => {
 
 		console.log(data)
 
@@ -17,7 +17,7 @@ export const LogProvider = ({ children }) => {
 		if (typeof data === 'string') {
 			setLog(l => {
 
-				return [...l, ...[{ id: ulid(), timestamp: getTime(), text: getText(data) }]];
+				return [...l, ...[{ id: ulid(), timestamp: getTime(time), text: getText(data) }]];
 			});
 		} else {
 			if (!Array.isArray && typeof data === 'object') {
@@ -27,7 +27,7 @@ export const LogProvider = ({ children }) => {
 			if (Array.isArray(data) && data.length > 0) {
 
 				for (let i = 0; i < data.length; i++) {
-					const { id = ulid(), timestamp, text } = data[i] || {};
+					const { id = ulid(), timestamp = time, text } = data[i] || {};
 
 					setLog(l => {
 						return [...l, ...[{ id, timestamp: getTime(timestamp), text: getText(text) }]];
@@ -60,14 +60,14 @@ function getText(text) {
 	return text
 }
 
-function getTime(timestamp) {
-	if (timestamp === null) {
+function getTime(time) {
+	if (!time) {
 		return ''
 	}
 
-	if (timestamp === undefined) {
+	if (time === true) {
 		return new Date().toLocaleTimeString();
 	}
 
-	return timestamp;
+	return time;
 }
