@@ -10,8 +10,8 @@
 	<a href="#license">
 		<img alt="GitHub" src="https://img.shields.io/github/license/okta-ciam-specialists/native-sso">
 	</a>
-	<a href="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/8c50d412-60ff-4cc9-bff1-22de72af7197">
-		<img src="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/8c50d412-60ff-4cc9-bff1-22de72af7197.svg" alt="wakatime">
+	<a href="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/337025aa-aed0-4870-bdd2-076ba976fa3b">
+		<img src="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/337025aa-aed0-4870-bdd2-076ba976fa3b.svg" alt="wakatime">
 	</a>
 </p>
 <br/>
