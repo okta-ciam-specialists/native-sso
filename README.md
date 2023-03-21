@@ -60,6 +60,7 @@ You will need to spin up and use your own tenant if you need to use different re
 Follow the steps necessary to setup your application [here](https://developer.okta.com/docs/guides/configure-native-sso/main/#native-sso-flow).
 
 Update the `.env` file with the appropriate values:
+
 ```env
 VITE_OKTA_CLIENT_ID=
 VITE_OKTA_ISSUER=
@@ -74,6 +75,7 @@ npm run dev
 ```
 
 ### Deploying
+
 This application was initially deployed using Vercel. To deploy to your own instance, use the 'Deploy' button at the top of the page and follow Vercel's guide(s).
 
 ## Maintainers
