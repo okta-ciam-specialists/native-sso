@@ -177,7 +177,7 @@ export const AuthProvider = ({ children }) => {
 				.then((tokens) => {
 					if (tokens) {
 						logger('idToken Claims:', true);
-						logger(tokens?.idToken?.claims);
+						logger(JSON.stringify(tokens?.idToken?.claims, null, 2));
 						logger('SSO success!', true);
 					}
 				})
