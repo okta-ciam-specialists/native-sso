@@ -8,21 +8,22 @@
 		<img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="standard-readme compliant">
 	</a>
 	<a href="#license">
-		<img alt="GitHub" src="https://img.shields.io/github/license/okta-ciam-specialists/native-sso">
+		<img alt="GitHub" src="https://img.shields.io/github/license/okta-ciam-specialists/native-sso-app">
 	</a>
-	<a href="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/337025aa-aed0-4870-bdd2-076ba976fa3b">
-		<img src="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/337025aa-aed0-4870-bdd2-076ba976fa3b.svg" alt="wakatime">
+	<a href="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/8c50d412-60ff-4cc9-bff1-22de72af7197">
+		<img src="https://wakatime.com/badge/user/28857d2c-0688-4cac-b02c-d81ceead7b94/project/8c50d412-60ff-4cc9-bff1-22de72af7197.svg" alt="wakatime">
 	</a>
 </p>
 <br/>
 <p align="center">
 	<img alt="GitHub followers" src="https://img.shields.io/github/followers/okta-ciam-specialists?style=social">
-	<img alt="GitHub forks" src="https://img.shields.io/github/forks/okta-ciam-specialists/native-sso?style=social">
+	<img alt="GitHub forks" src="https://img.shields.io/github/forks/okta-ciam-specialists/native-sso-app?style=social">
 </p>
 <br/>
 <p align="center">
-	<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fokta-ciam-specialists%2Fnative-sso"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
-	<a href="https://stackblitz.com/fork/github/okta-ciam-specialists/native-sso.git">
+	<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fokta-ciam-specialists%2Fnative-sso-app"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+	&nbsp;
+	<a href="https://stackblitz.com/fork/github/okta-ciam-specialists/native-sso-app.git">
 	<img
 		alt="Open in StackBlitz"
 		src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
@@ -36,16 +37,23 @@ TODO: Fill out this long description.
 
 ## Table of Contents
 
-- [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Background
+### Please refer to the [readme](https://github.com/okta-ciam-specialists/native-sso-app/blob/main/README.md) for the primary application in this demo for full details.
+
+---
+
+<span style="color: red"><em><b>There are security vulnerabilities in this demo app. DO NOT copy the implementation as-is.</b></em></span>
+
+---
 
 ## Install
+
+This project utilizes a [Vercel serverless function](https://vercel.com/docs/concepts/functions/serverless-functions). It is recommended that you setup your own Vercel account and use the deploy button at the top of the page to deploy your own copy of this code.
 
 ```bash
 npm install
@@ -59,6 +67,8 @@ You will need to spin up and use your own tenant if you need to use different re
 
 Follow the steps necessary to setup your application [here](https://developer.okta.com/docs/guides/configure-native-sso/main/#native-sso-flow).
 
+**This application is the receiver of the SSO in the flow.**
+
 Update the `.env` file with the appropriate values:
 
 ```env
@@ -71,7 +81,7 @@ VITE_OKTA_ISSUER=
 ### Running Locally
 
 ```bash
-npm run dev
+npm run local
 ```
 
 ### Deploying
